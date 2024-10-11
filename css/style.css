@@ -5,3 +5,17 @@
     color: #9DD211;
     font-size: 6rem;
 }
+
+.tittletour{
+    font-weight: light;
+    font-size: 10rem;
+    color: #9DD211;
+}
+.slogan{
+    font-weight: bold;
+    margin: 0;
+}
+.btn-light:hover {
+    background-color: #9DD211 !important;
+    border-color: #9DD211 !important;     
+}
