@@ -1,12 +1,13 @@
 /* CSS INDEX */
 
 *{
-    background-color: #9DD211;
     box-sizing: border-box;
 }
 
 
-
+.home {
+  background-color: #9DD211;
+}
 video {
     position: relative;
     width: 100%;
@@ -81,7 +82,7 @@ video {
   .card-body{
     text-align: center;
   }
-
+ 
   @media (min-width: 768px) {
     .card img {
       width: 100%;
@@ -93,7 +94,9 @@ video {
 
 /* -------CSS TICKETS------ */
 
-
+body.tickets {
+  background-color: black !important;
+ }
 .titulo{
     color: #9DD211;
     font-size: 6rem;
@@ -107,9 +110,37 @@ video {
 .slogan{
     font-weight: bold;
     margin: 0;
+    color: white !important;
 }
 .btn-light:hover {
     background-color: #9DD211 !important;
     border-color: #9DD211 !important;     
 }
+/* Hacer que la tabla tenga un fondo transparente */
+.table-custom {
+  background-color: transparent; /* Fondo transparente */
+  color: white; /* Texto blanco para buena legibilidad */
+}
 
+.table-custom th,
+.table-custom td {
+  border-color: white; /* Bordes blancos */
+}
+
+.table-custom thead th {
+  background-color: transparent; /* Encabezado con fondo transparente */
+  color: white; /* Texto blanco */
+}
+
+/* Botones claros para resaltar sobre el fondo transparente */
+.table-custom .btn-light {
+  background-color: white;
+  color: black;
+  border: none;
+}
+
+/* Cambiar color de hover en los botones */
+.table-custom .btn-light:hover {
+  background-color: #9DD211;
+  color: black;
+}
