@@ -35,6 +35,13 @@ video {
     margin-top: 0em;
     
   }
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10%;
+    
+}
   
   /* Create four equal columns that sits next to each other */
   .column {
@@ -63,6 +70,7 @@ video {
   }
   .carousel-inner {
     padding: 1em;
+  
   }
   .carousel-control-prev,
   .carousel-control-next {
@@ -70,7 +78,7 @@ video {
     width: 5vh;
     height: 5vh;
     border-radius: 50%;
-    top: 50%;
+    
     transform: translateY(-50%);
   }
 
@@ -88,6 +96,8 @@ video {
       width: 100%;
     }
   }
+
+
 
 
 
