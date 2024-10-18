@@ -6,7 +6,7 @@
 
 
 .home {
-  background-color: #9DD211;
+  background-color: #000000;
 }
 video {
     position: relative;
@@ -14,12 +14,15 @@ video {
     height: 100%;
 }
 
+.navbar{
+  background-color: #9DD211;
+}
 
-  body {
+body {
     margin: 0;
     font-family: Arial;
     
-  }
+}
   
 
   .header {
@@ -41,6 +44,10 @@ video {
     left: 0;
     padding-top: 10%;
     
+}
+.text-center{
+  font-family: Arial;
+  color: #e1e1e1;
 }
   
   /* Create four equal columns that sits next to each other */
@@ -67,6 +74,9 @@ video {
     margin: 0 0.5em;
     border: transparent !important;
     background-color: transparent !important;
+  }
+  .gallerytitle{
+    width: 15em;
   }
   .carousel-inner {
     padding: 1em;
@@ -98,6 +108,92 @@ video {
   }
 
 
+
+  footer {
+    background-color: #9DD211;
+    width: 100%;
+    color: var(--white);
+}
+#iconos{
+    color: var(--white);
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    display: flex;
+  justify-content: center;
+  justify-content: space-between;
+
+}
+#iconos > div > li {
+    list-style: none;
+    display: inline;
+}
+#iconos > div > li > a {
+
+    align-items: center;
+    display: inline;
+    color: var(--white);
+    text-decoration: none;
+    justify-content: space-between;
+    list-style: none;
+} 
+
+footer > section {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    align-items: center;
+}
+footer > section > div > figure {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > section > div > figure > img {
+    width: 250px;  
+}
+
+footer > div > div > span {
+    font-size: small;
+
+    font-weight: bolder;
+}
+
+footer > div > ul {
+
+    text-align: end;
+    font-weight: bold;
+    font-size: x-small;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    margin: 4px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+footer > div {
+    
+  
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+
+    /* grid-area: auto; */
+    /* grid-gap: 20px 80px; */
+}
 
 
 
