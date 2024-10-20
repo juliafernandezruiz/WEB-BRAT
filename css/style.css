@@ -1,3 +1,5 @@
+
+
 /* CSS INDEX */
 
 *{
@@ -222,31 +224,20 @@ body.tickets {
     background-color: #9DD211 !important;
     border-color: #9DD211 !important;     
 }
-/* Hacer que la tabla tenga un fondo transparente */
-.table-custom {
-  background-color: transparent; /* Fondo transparente */
-  color: white; /* Texto blanco para buena legibilidad */
-}
-
-.table-custom th,
-.table-custom td {
-  border-color: white; /* Bordes blancos */
-}
-
-.table-custom thead th {
-  background-color: transparent; /* Encabezado con fondo transparente */
-  color: white; /* Texto blanco */
-}
-
-/* Botones claros para resaltar sobre el fondo transparente */
-.table-custom .btn-light {
-  background-color: white;
-  color: black;
-  border: none;
-}
-
-/* Cambiar color de hover en los botones */
 .table-custom .btn-light:hover {
   background-color: #9DD211;
   color: black;
+}
+
+.fondo-tabla {
+  background-color: #000000 !important; /* Fondo negro para toda la tabla */
+}
+
+.fondo-tabla th, 
+.fondo-tabla td {
+  background-color: #000000 !important; /* Fondo negro para celdas y encabezados */
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 500px;
 }
