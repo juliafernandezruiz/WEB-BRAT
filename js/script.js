@@ -1,3 +1,6 @@
+
+  AOS.init();
+
 var typed = new Typed("#typed-text", {
     strings: [
         "Some typed text",
@@ -8,10 +11,7 @@ var typed = new Typed("#typed-text", {
     typeSpeed: 80,
 });
 
-ScrollReveal().reveal(".grid-wrapper > div", {
-    delay: 200,
-    distance: "50px",
-    interval: 100,
-    origin: "bottom",
-    scale: 0.9,
-});
+
+
+
+
