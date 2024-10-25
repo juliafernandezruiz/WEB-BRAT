@@ -29,6 +29,26 @@ img {
   vertical-align: middle;
   display: inline-block;
 }
+.gallery-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 5%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 1;
+  width: 30%;
+}
+
+.grid-wrapper {
+  position: relative;
+  z-index: 0;
+  margin-top: 50px; 
+}
 
   
 .row {
@@ -105,12 +125,17 @@ img {
   max-width: 150px;
   cursor: grab;
   transition: transform 0.2s ease;
+  z-index: 1;
 }
 .sticker2 {
   position: absolute;
   max-width: 150px;
   cursor: grab;
   transition: transform 0.2s ease;
+  top: 62%;
+    left: 28%;
+    z-index: 1;
+
 }
 
 /* Cambio de escala al pasar el mouse por encima */
@@ -127,7 +152,7 @@ img {
 }
 
 .sticker:nth-child(2) {
-  top: 40%;
+  top: 30%;
   left: 58%;
   
 }
@@ -142,7 +167,36 @@ img {
   
 }
 
+ 
 
+@media screen and (min-width: 769px) {
+  .sticker1{
+   display: none;
+  } 
+}
+
+@media screen and (max-width: 991px) {
+  .sticker:nth-child(2) {
+    top: 36%;
+    left: 42%;
+}
+}
+@media screen and (max-width: 991px) {
+  .sticker2 {
+    display: none;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .sticker2{
+    top: 62%;
+    left: 25%;
+  }
+}
 
 
 /* Main CSS */
@@ -187,11 +241,7 @@ img {
 }
 
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  color: aliceblue;
-}
+
 
 @media screen and (max-width: 768px) {
   .grid-wrapper > div {
@@ -201,16 +251,20 @@ footer {
 }
 
 
+<<<<<<< Updated upstream
 
   
 
+=======
+>>>>>>> Stashed changes
 
   /* footer */
 
-  footer {
+footer {
     background-color: #9DD211;
     width: 100%;
     color: var(--white);
+    text-align: center;
 }
 #iconos{
     color: var(--white);
@@ -276,6 +330,11 @@ footer > div > ul {
     padding-left: 30px;
     padding-right: 30px;
 }
+ul{
+  list-style-type: none;
+  text-align: right;
+}
+
 
 
 footer > div {
@@ -293,6 +352,54 @@ footer > div {
     /* grid-gap: 20px 80px; */
 }
 
+#subscribe {
+  text-align: center;
+  margin: 20px 20px;
+  color: #000000; /* Ajusta el color según el diseño */
+}
+
+#subscribe h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-size: 20px;
+  
+}
+#subscribe p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-size: 15px;
+  
+}
+
+#subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#subscribe-form input[type="email"] {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
+}
+
+#subscribe-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #000000; /* Color del botón */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#subscribe-form button:hover {
+  background-color: #000000; /* Color al pasar el cursor */
+}
 
 
 
