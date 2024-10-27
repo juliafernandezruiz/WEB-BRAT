@@ -11,11 +11,6 @@ var typed = new Typed("#typed-text", {
     typeSpeed: 80,
 });
 
-<<<<<<< Updated upstream
-
-
-
-=======
 ScrollReveal().reveal(".grid-wrapper > div", {
     delay: 200,
     distance: "50px",
@@ -44,5 +39,4 @@ function prevSlide() {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Slide anterior
     showSlide(currentIndex);
 }
->>>>>>> Stashed changes
 

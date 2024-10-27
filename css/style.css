@@ -251,13 +251,6 @@ img {
 }
 
 
-<<<<<<< Updated upstream
-
-  
-
-=======
->>>>>>> Stashed changes
-
   /* footer */
 
 footer {
@@ -408,21 +401,18 @@ footer > div {
 body.tickets {
   background-color: black !important;
  }
-.titulo{
-    color: #9DD211;
-    font-size: 6rem;
+
+.overlay-image {
+  position: absolute;
+  top: 5%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  height: auto;
+  z-index: 1;
+  width: 30%;
 }
 
-.tittletour{
-    font-weight: light;
-    font-size: 10rem;
-    color: #9DD211;
-}
-.slogan{
-    font-weight: bold;
-    margin: 0;
-    color: white !important;
-}
+
 .btn-light:hover {
     background-color: #9DD211 !important;
     border-color: #9DD211 !important;     
@@ -432,14 +422,6 @@ body.tickets {
   color: black;
 }
 
-.fondo-tabla {
-  background-color: #000000 !important; /* Fondo negro para toda la tabla */
-}
-
-.fondo-tabla th, 
-.fondo-tabla td {
-  background-color: #000000 !important; /* Fondo negro para celdas y encabezados */
-}
 .background-container {
   background-image: url(../img/concierto.jpeg) !important;
   background-size: cover;
@@ -452,10 +434,48 @@ body.tickets {
 }
 
 /* Ajustes de la tabla */
-.fondo-tabla {
-  
-  width: 80%; /* Ajusta el ancho de la tabla */
+.fondo-contenedor {
+  background-image: url('../img/FONDOTABLA.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
 }
+.table,
+.table thead,
+.table tbody,
+.table th,
+.table td {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-color: transparent !important; 
+}
+
+.row.no-gutters {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.tabla-derecha {
+  margin-left: auto;
+  background-color: transparent !important;
+}
+
+
+.fondo-tabla {
+  background-color: transparent !important;
+  border: none;
+}
+.table-hover tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Color de fondo ligero al pasar el cursor */
+}
+
+
+.contenedor-derecha {
+  margin-top: -50px;
+}
+
+
+
 
 #carouselExampleSlidesOnly .carousel-inner img {
   width: 100%;
