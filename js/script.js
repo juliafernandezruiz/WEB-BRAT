@@ -11,6 +11,9 @@ var typed = new Typed("#typed-text", {
     typeSpeed: 80,
 });
 
+
+
+
 ScrollReveal().reveal(".grid-wrapper > div", {
     delay: 200,
     distance: "50px",
@@ -39,4 +42,25 @@ function prevSlide() {
     currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Slide anterior
     showSlide(currentIndex);
 }
+
+
+
+function setBackground(color) {
+    const background = document.getElementById('background');
+    background.style.backgroundColor = color === '#9DD21' ? '#00FF7F' : '#FFFFFF';
+  }
+  
+  function generateImage() {
+    const text = document.getElementById('inputText').value;
+    const textOverlay = document.getElementById('textOverlay');
+    textOverlay.textContent = text ? text : "Write here";
+  
+    html2canvas(document.getElementById('imageContainer')).then(canvas => {
+      const link = document.createElement('a');
+      link.download = 'brat_generator_image.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    });
+  }
+  
 

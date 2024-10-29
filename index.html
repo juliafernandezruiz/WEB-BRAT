@@ -22,9 +22,16 @@
  <!-- TYPED JS -->
  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+ <!-- Para el generador: -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+
 </head>
 
 <body class="home">
+
+  
 
   <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
@@ -129,11 +136,50 @@
        
         </div>
     </div>
+
+    
     
 
     
   
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2lIZef4lzdvZkiiCzvPKj7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section id="spotiquote">
+        <iframe class="mx-auto" style="border-radius:12px; max-width: 500px;" src="https://open.spotify.com/embed/album/36P07bti6xD99o7S1acmin?utm_source=generator" width="100%" height="400" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        
+        <div>
+        <figure>
+            <img src="png/who tf are u when.png" alt="logo">
+        </figure>
+         </div>
+
+    </section>
+    
+    
+    <section id="generator">
+        <div class="generatordiv">
+            <h1>Brat Sentence Generator</h1>
+    
+           <div class="generatordiv2">
+                </div> <textarea id="inputText" rows="3" placeholder="Write here"></textarea>
+           
+                <button class="button" onclick="generateImage()">Generate</button>
+           </div>
+
+        
+        </div>
+        
+    
+    
+        <div class="container3" id="imageContainer">
+      <div id="background" class="background"></div>
+      <div id="textOverlay" class="text-overlay">Your sentence will appear here</div>
+     </div>
+    
+     <canvas id="canvas" style="display: block;"></canvas>
+    </section>
+    
+
+
+  
     <footer>
         <section id="footer">
            
@@ -158,7 +204,7 @@
               <button type="submit">Subscribe</button>
             </form>
           </div>
-        </section>
+           
       
             
             
@@ -202,16 +248,20 @@
                          </li>
                     </div> 
       
-            </div>
+                </div>
             
       
             </div>
-      
+        </section>
       
       </footer>
+
+    
+    
+  <script src="js/script.js"></script>
+
 <body>
 
 
-<script src="js/script.js"></script>
 
 </html>
