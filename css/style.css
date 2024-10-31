@@ -613,6 +613,19 @@ body.tickets {
   font-weight: bold;
 }
 
+.newplaces {
+  padding-left: 13%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  color: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.newplaces > h1 {
+  font-size:1em ;
+}
+
 /* Animación continua */
 @keyframes scroll {
   from { transform: translateX(0); }
@@ -700,5 +713,5 @@ h2 {
   display: inline-block;
 }
 .btn:hover {
-  background-color: #d4446e;
+  background-color: #d4446e !important;
 }
