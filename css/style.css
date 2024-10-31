@@ -586,6 +586,39 @@ body.tickets {
   height: 500px; 
   object-fit: cover; 
 }
+/* Contenedor principal */
+.sponsor-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #9DD211; /* Fondo opcional */
+  padding: 1em 0;
+}
+
+/* Pista de elementos con animación */
+.sponsor-track {
+  display: inline-flex;
+  animation: scroll 60s linear infinite;
+  /* padding-bottom: 1em; */
+}
+
+/* Elementos individuales de texto */
+.sponsor-item {
+  display: inline-block;
+  margin: 0 2em; /* Espacio entre textos */
+  font-size: 1.2em;
+  color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+  font-family: 'Lilita One', Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Animación continua */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); } /* Se desplaza hasta la mitad del contenedor duplicado */
+}
+
 
 
 
