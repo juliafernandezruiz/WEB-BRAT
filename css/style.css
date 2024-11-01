@@ -169,15 +169,19 @@ img {
 
  
 
-@media screen and (min-width: 769px) {
-  .sticker1{
+@media screen and (max-width: 766px) {
+  .sticker{
    display: none;
   } 
+  #generator {
+    justify-content: baseline;
+  }
 }
+
 
 @media screen and (max-width: 991px) {
   .sticker:nth-child(2) {
-    top: 36%;
+    top: 21%;
     left: 42%;
 }
 }
@@ -243,15 +247,14 @@ img {
 
 
 
+
+/* Ajustes específicos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
-  .grid-wrapper > div {
-      grid-column: span 2;
-      grid-row: span 2;
+  .grid-wrapper {
+    grid-template-columns: 1fr; /* Ocupa una columna completa en pantallas pequeñas */
   }
+
 }
-
-
-
 #spotiquote {
   width: 100%;
   max-width: 1200px;
@@ -259,7 +262,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  padding: 45px 0px;
+  padding: 45px;
   align-items: center;
 }
 
@@ -294,9 +297,10 @@ img {
   display: flex;              
   flex-direction: column;     
   align-items: center;       
-  justify-content: center;    
+  justify-content: flex-start;    
   min-height: 100vh;          
-  text-align: center;        
+  text-align: center;   
+  padding-top: 5em;     
 }
 .generatordiv{
   display: flex;              
@@ -308,13 +312,15 @@ img {
   color: #ffffff;
   
 }
-#inputtext{
-  padding: 10%;
+#inputText {
+  width: 100%;
+  padding: 10px;
   resize: none;
 }
+
 .container3 {
   position: relative;
-  width: 400px;
+  width: 400px; 
   height: 400px;
   margin: 20px auto;
   border: 2px solid #000;
@@ -354,6 +360,21 @@ img {
   border: none;
   border-radius: 5px;
 }
+@media (max-width: 480px) {
+  .container3 {
+      max-width: 300px; 
+      height: 300px; 
+  }
+  .text-overlay {
+      font-size: 24px; 
+  }
+  #inputText {
+      width: 100%; 
+      padding: 10px;
+  }
+}
+
+
 
 /* footer */
 
@@ -450,9 +471,17 @@ footer > div {
 }
 
 #subscribe {
+  position: relative;
   text-align: center;
-  margin: 20px 20px;
-  color: #000000; /* Ajusta el color según el diseño */
+  margin: 20px auto;
+  width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+  max-width: 90%; /* O un porcentaje para dejar margen */
+  color: #000000;
+}
+@media (max-width: 925px){
+  #subscribe{
+    display: none;
+  }
 }
 
 #subscribe h2 {
@@ -469,7 +498,7 @@ footer > div {
 }
 
 #subscribe-form {
-  display: flex;
+  
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -666,7 +695,6 @@ h2 {
   text-align: center;
   color: #e75480;
 }
-/* Grid para los productos */
 .product-grid {
   display: grid;
     grid-template-columns: repeat(3, 1fr); /* Esto establece 3 columnas */
@@ -674,7 +702,7 @@ h2 {
 }
 .product-card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -702,8 +730,8 @@ h2 {
   color: #666;
   margin: 0 0 10px;
 }
-.btn {
-  background-color: #e75480;
+.btns {
+  background-color: #9DD211;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -712,6 +740,193 @@ h2 {
   text-decoration: none;
   display: inline-block;
 }
-.btn:hover {
-  background-color: #d4446e !important;
+.btns:hover {
+  background-color: #000000 !important;
 }
+
+@media (min-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+      grid-template-columns: 1fr;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  .product-name {
+      font-size: 14px;
+  }
+
+  .product-price {
+      font-size: 12px;
+  }
+
+  .btns {
+      padding: 6px 12px;
+      font-size: 14px;
+  }
+}
+
+/* footer de la shop */
+
+footer {
+  background-color: #9DD211;
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+}
+#iconos{
+  color: var(--white);
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  display: flex;
+justify-content: center;
+justify-content: space-between;
+
+}
+#iconos > div > li {
+  list-style: none;
+  display: inline;
+}
+#iconos > div > li > a {
+
+  align-items: center;
+  display: inline;
+  color: var(--white);
+  text-decoration: none;
+  justify-content: space-between;
+  list-style: none;
+} 
+
+footer > section {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  align-items: center;
+}
+footer > section > div > figure {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > section > div > figure > img {
+  width: 250px;  
+}
+
+footer > div > div > span {
+  font-size: small;
+
+  font-weight: bolder;
+}
+
+footer > div > ul {
+
+  text-align: end;
+  font-weight: bold;
+  font-size: x-small;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  justify-content: space-around;
+  margin: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+ul{
+list-style-type: none;
+text-align: right;
+}
+
+
+
+footer > div {
+  
+
+  padding-left: 10%;
+  padding-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+
+  /* grid-area: auto; */
+  /* grid-gap: 20px 80px; */
+}
+
+#subscribe {
+position: relative;
+text-align: center;
+margin: 20px auto;
+width: 100%; /* Para que ocupe todo el ancho de la pantalla */
+max-width: 90%; /* O un porcentaje para dejar margen */
+color: #000000;
+}
+@media (max-width: 925px){
+#subscribe{
+  display: none;
+}
+}
+
+#subscribe h2 {
+font-size: 1.2em;
+margin-bottom: 10px;
+font-size: 20px;
+
+}
+#subscribe p {
+font-size: 1.2em;
+margin-bottom: 10px;
+font-size: 15px;
+
+}
+
+#subscribe-form {
+
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+#subscribe-form input[type="email"] {
+padding: 10px;
+font-size: 1em;
+border-radius: 5px;
+border: none;
+width: 250px;
+}
+
+#subscribe-form button {
+padding: 10px 20px;
+font-size: 1em;
+border: none;
+border-radius: 5px;
+background-color: #000000; /* Color del botón */
+color: #fff;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+#subscribe-form button:hover {
+background-color: #000000; /* Color al pasar el cursor */
+}
+
