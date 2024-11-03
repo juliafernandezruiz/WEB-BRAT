@@ -306,16 +306,23 @@ img {
   display: flex;              
   flex-direction: column;     
   align-items: center;       
-  justify-content: center;    
+  justify-content: center; 
 }
 .generatordiv h1{
-  color: #ffffff;
-  
+  color: #ffffff; 
+}
+#inputText{
+  border: #9DD211;
+  border-style: solid;
+  border-radius: 0.5em;
 }
 #inputText {
   width: 100%;
   padding: 10px;
   resize: none;
+}
+.button {
+  margin-top: 1em ;
 }
 
 .container3 {
@@ -660,7 +667,13 @@ body.tickets {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); } /* Se desplaza hasta la mitad del contenedor duplicado */
 }
-
+.btn-primary{
+  background-color: #9DD211 !important;
+    border-color: #9DD211 !important; 
+}
+.form-group {
+  padding-bottom: 1em;
+}
 
 
 

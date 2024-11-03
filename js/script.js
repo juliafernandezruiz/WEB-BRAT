@@ -1,5 +1,5 @@
-
-  AOS.init();
+ 
+ AOS.init();
 
 var typed = new Typed("#typed-text", {
     strings: [
@@ -62,6 +62,5 @@ function setBackground(color) {
       link.click();
     });
   }
-  
   
 
