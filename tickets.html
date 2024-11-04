@@ -11,34 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body class="tickets">
-
-  <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">charli xcx</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse position-absolute top-0 end-0" id="navbarSupportedContent">
-        <ul class="navbar-nav ">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="tickets.html">tour</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="shop.html">shop</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav> 
+  <section id="menu">
+    <nav class="navbar navbar-expand-md">     
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">charli xcx</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tickets.html">tour</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">shop</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
   <video autoplay="" loop="" muted>
     <source src="videos/Charli XCX_ BRAT 2024 ARENA TOUR .mp4" type="video/mp4" />
   </video>
@@ -46,7 +48,7 @@
     <img src="img/brattour.png" alt="Imagen superpuesta">
     
 </div>
-<div class="sponsor-marquee">
+<div class="sponsor-marquee marqueeprincipal">
   <div class="sponsor-track">
     <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
     <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
@@ -144,7 +146,6 @@
     </div>
     <div class="sponsor-marquee">
       <div class="sponsor-track">
-
         <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
         <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
         <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
@@ -157,10 +158,6 @@
         <div class="sponsor-item">TICKETS ARE ON SALE NOW!</div>
         </div>
     </div>
-    <!-- <div class="container mt-5">
-      <div class="text-left"> <img src="img/bratgallerytext.png" alt=""></div>
-    </div> -->
-    <!-- CARROUSEL -->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
       <div class="carousel-inner">
         
@@ -199,13 +196,10 @@
     <section class="text-white py-5">
       <div class="container">
         <div class="row">
-          <!-- Texto de introducción -->
           <div class="col-12 text-center mb-4">
             <h1>POSSIBLE NEW PLACES FOR THE BRAT TOUR!</h1>
-            <h2>Select the place where you would most like Charlie to be in the future.</h2>
+            <h2>Select the place where you would most like Charli to be in the future.</h2>
           </div>
-    
-          <!-- Selector de país -->
           <div class="col-md-6 offset-md-3">
             <h2>Select Your Country</h2>
             <form>
@@ -213,14 +207,11 @@
                 
                 <select class="form-control" id="selectCountry">
                   <option value="">Select a country</option>
-                  <!-- European Countries -->
                   <option value="DE">Germany</option>
                   <option value="FR">France</option>
                   <option value="IT">Italy</option>
                   <option value="ES">Spain</option>
                   <option value="NL">Netherlands</option>
-                  
-                  <!-- Asian Countries -->
                   <option value="JP">Japan</option>
                   <option value="CN">China</option>
                   <option value="IN">India</option>
@@ -236,88 +227,46 @@
         </div>
       </div>
     </section>
-    
     <footer>
-      <section id="footer">
-         
-          <div>
-              <figure>
+      <div class="container footeraligment">
+          <div class="row align-items-center text-center">           
+              <div class="col-md-4 footer-logo">
                   <img src="png/charli xcx.png" alt="logo">
-              </figure>
-          </div>
-          <div>
-              <ul>
-                  <li>home</li>
-                  <li>tour</li>
-                  <li>shop</li>
-              </ul>
-          </div>
-    
-          <!-- Sección de Suscripción -->
-        <div id="subscribe">
-          <h2>Subscribe to Charlie XCX News</h2>
-          <p>Stay updated with the latest news, releases, and tours.</p>      <form action="#" method="post" id="subscribe-form">
-            <input type="email" placeholder="Your mail" required>
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
-      </section>
-    
-          
-          
-          </section>
-          <div>
-              <div>
-                  <span>©Copyright Charlie XCX</span>
               </div>
-              <ul>
-                  
-                  <p> <ul> COOKIES </ul> </p>
-                  
-                  <p> <ul> TERMS AND CONDITIONS</ul> </p>
-                  
-                  <p> <ul> PRIVACY POLICY</ul> </p>
-              </ul>
-              
-    
-              <div id="iconos">
-              
-                  <div>
-                       <li>
-                           <a href="https://www.instagram.com/fstvl_b/?hl=es"> 
-                               <i class="fa-brands fa-instagram"></i>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="https://www.facebook.com/fstvlb/"> 
-                               <i class="fa-brands fa-facebook-f"></i>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="https://www.youtube.com/@festivalcarab8482"> 
-                               <i class="fa-brands fa-youtube"></i>
-                           </a>
-                       </li>
-                       <li>
-                           <a href="https://www.tiktok.com/@fstvlb"> 
-                               <i class="fa-brands fa-tiktok"></i>
-                           </a>
-                       </li>
-                  </div> 
-    
+              <div class="col-md-4 footer-links">
+                  <ul>
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="tickets.html">tour</a></li>
+                      <li><a href="shop.html">shop</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4" id="subscribe">
+                  <h2>Subscribe to Charli XCX News</h2>
+                  <p>Stay updated with the latest news, releases, and tours.</p>
+                  <form action="#" method="post" id="subscribe-form">
+                      <input type="email" placeholder="Your mail" required>
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
           </div>
-          
-    
+          <div class="social-icons">
+              <a href="https://www.instagram.com/charli_xcx"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/@officialcharlixcx"><i class="fab fa-youtube"></i></a>
+              <a href="https://www.tiktok.com/@charlixcx"><i class="fab fa-tiktok"></i></a>
           </div>
-    
-    
-    </footer>
-
-  <!-- Bootstrap JS and Custom JS -->
+          <div class="footer-bottom mt-2">
+              <span>© Copyright Charli XCX</span> 
+              <a href="#">COOKIES</a> |
+              <a href="#">TERMS AND CONDITIONS</a> |
+              <a href="#">PRIVACY POLICY</a>
+          </div>
+      </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybEptn8bK2Lvg+1zWj6z9MliFkq5MG7j3T63nxI9lvvZpHjOk" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="js/script.js"></script>
 </body>
 </html>
