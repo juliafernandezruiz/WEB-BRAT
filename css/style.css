@@ -580,15 +580,20 @@ body.tickets {
 }
 
 /* SHOP */
+
+
+
 .shop {
   background-color: var(--black);
   color: var(--white);
 }
 
+
 .containershop {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  padding-top: 5em;
 }
 h3 {
   text-align: center;
