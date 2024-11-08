@@ -466,9 +466,9 @@ body.tickets {
   width: 30%;
 }
 
-.btn-light:hover {
-    background-color: var(--green) !important;
-    border-color: var(--green) !important;     
+
+.button:hover {
+  background-color: var(--black)!important;
 }
 .table-custom .btn-light:hover {
   background-color: var(--green);
