@@ -598,7 +598,6 @@ body.tickets {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  padding-top: 5em;
 }
 h3 {
   text-align: center;
@@ -758,4 +757,5 @@ h3 {
     height: auto;
   }
 }
+
 

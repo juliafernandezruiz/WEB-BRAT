@@ -63,4 +63,18 @@ function setBackground(color) {
     });
   }
 
-  
+$(document).ready(function() {
+    $('.product-card').hover(
+        function() {
+            console.log('Ratón sobre la tarjeta'); // Muestra mensaje al pasar el ratón
+            $(this).css('background-color', '#FF69B4'); // Cambia al color deseado al pasar el ratón
+        }, 
+        function() {
+            console.log('Ratón fuera de la tarjeta'); // Muestra mensaje al quitar el ratón
+            $(this).css('background-color', ''); // Regresa al color original al quitar el ratón
+        }
+    );
+});
+$('.product-card').css('border', '2px solid red');
+console.log(typeof jQuery !== 'undefined' ? "jQuery está cargado" : "jQuery no está cargado");
+
