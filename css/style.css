@@ -423,6 +423,11 @@ footer {
   cursor: pointer;
   width: 100%;
 }
+#subscribe-form button:hover {
+  background-color: var(--green)!important;
+  border-style: inset;
+  border-color: #000000;
+}
 
 .footer-bottom {
   font-size: 0.8rem;
