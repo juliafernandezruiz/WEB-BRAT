@@ -229,6 +229,7 @@ img {
 
 /* SPOTIFY */
 #spotiquote {
+  overflow: hidden;
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -667,7 +668,7 @@ h3 {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 10em;}
+    margin-top: 0em;}
 }
 
 @media (max-width: 480px) {
@@ -691,6 +692,9 @@ h3 {
       padding: 6px 12px;
       font-size: 14px;
   }
+  .fondo-contenedor{
+    padding: 0;
+  }
 }
 
 
@@ -710,6 +714,7 @@ h3 {
 }
 
 /* MEDIA QUERIS MOVIL  */
+
 @media (max-width: 450px) {
   video {
     position: absolute;
@@ -755,6 +760,26 @@ h3 {
   .image-overlay img {
     max-width: 80%; 
     height: auto;
+  }
+  .table{
+    margin-right: 0 !important;
+  }
+  .fondo-contenedor{
+    padding: 0;
+  }
+}
+@media (max-width: 390px){
+  .overlay-image{
+    padding-top: 85rem !important;
+  }
+  .grid-wrapper{
+    padding-top: 8em;
+  }
+  .marqueeprincipal{
+    padding-top: 10em;
+  }
+  .fondo-contenedor{
+    padding: 0;
   }
 }
 
