@@ -14,7 +14,32 @@
     );
 });
 $('.product-card').css('border', '2px solid var(--green)');
+const foodSuggestions = ["Ramen", "Sushi", "Okonomiyaki", "Takoyaki", "Sashimi", "Tempura"];
+$('#generate-card').on('click', function () {
+    const userName = $('#user-name').val();
+    const birthdate = $('#user-birthdate').val();
+    
+    if (!userName || !birthdate) {
+        alert('Por favor, completa ambos campos.');
+        return;
+    }
 
+    // Simulación del nombre en japonés
+    const japaneseName = userName.split('').map(char => `ア${char}`).join('');
+
+    // Selección de platillo
+    const foodIndex = new Date(birthdate).getDate() % foodSuggestions.length;
+    const foodSuggestion = foodSuggestions[foodIndex];
+
+    // Contenido de la tarjeta
+    const cardHtml = `
+        <p><strong>Nombre en japonés:</strong> ${japaneseName}</p>
+        <p><strong>Recomendación del chef:</strong> ${foodSuggestion}</p>
+        <img src="https://source.unsplash.com/200x200/?${foodSuggestion}" alt="${foodSuggestion}" style="border-radius: 8px; margin-top: 10px;">
+    `;
+    $('#card-content').html(cardHtml);
+    $('#card-result').fadeIn();
+});
 
 var typed = new Typed("#typed-text", {
     strings: [

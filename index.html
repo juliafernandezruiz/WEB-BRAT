@@ -134,6 +134,23 @@
 
      
     </section>
+    <section id="personalized-card" class="container text-center py-5">
+        <h2>Genera tu tarjeta personalizada</h2>
+        <p>Escribe tu nombre y tu fecha de nacimiento para descubrir cómo se escribe en japonés y recibir una recomendación especial.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <input type="text" id="user-name" class="form-control mb-3" placeholder="Tu nombre">
+                <input type="date" id="user-birthdate" class="form-control mb-3">
+                <button id="generate-card" class="btn btn-primary">Generar Tarjeta</button>
+            </div>
+        </div>
+        <div id="card-result" class="mt-5" style="display: none;">
+            <h3>Tu tarjeta personalizada:</h3>
+            <div id="card-content" style="padding: 20px; border: 1px solid orange; background: beige;">
+                <!-- Contenido generado dinámicamente -->
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container footeraligment">
             <div class="row align-items-center text-center">           
